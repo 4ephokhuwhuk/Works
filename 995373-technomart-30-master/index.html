@@ -8,15 +8,16 @@
 
 <header>
     <a>
-        <img src="img/technomart-logo.svg" widgt="220" height="68" alt="ТехномартЛого">
+        <img src="img/technomart-logo.svg" width="220" height="68" alt="ТехномартЛого">
         <h1>Техномарт</h1>
     </a>
     <form>
-        Поиск
+        <lable for="search">Поиск</lable>
+        <input type="search" id="search" placeholder="Поиск">
     </form>
     <ul>
-        <li><a href="#">Закладки</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Закладки:0</a></li>
+        <li><a href="#">Корзина:0</a></li>
         <li><a href="#">Оформить заказ</a></li>
     </ul>
     <ul>
@@ -29,89 +30,90 @@
         <li><a href="#">Регистрация</a></li>
     </ul>
     <nav>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="blank.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="blank.html">Спецпредложения</a></li>
-            <li><a href="blank.html">Доставка</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-        </ul>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="blank.html">Компания</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="blank.html">Спецпредложения</a></li>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+    </ul>
     </nav>
 </header>
+
 <main>
     <section name="Все товары">
         <h2>Товары и услуги</h2>
-            <ul>
-               <li>
-                    <h3>Материалы</h3>
-                    <a href="#">На любой вкус</a>
-                    <img src="img/materials.svg" width="44" height="65" alt="банка"></li>
-                <li>
-                    <h3>Инструменты</h3>
-                    <a href="#">На все случаи</a>
-                    <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
-                </li>
-                <li>
-                    <h3>Техника</h3>
-                    <a href="#">Для стройки</a>
-                    <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
-                </li>
-                <li>
-                    <h3>Сидки 50%</h3>
-                    <a href="#">На 350 товаров</a>
-                    <img src="img/discounts.svg" widht="59" height="62" alt="корзина">
-                </li>
-                <li>
-                    <h3>Доставка</h3>
-                    <a href="#">Бесплатно</a>
-                    <img src="img/delivery.svg" width="78" height="63" alt="машина">
-                </li>
-                <li>
-                    <h3>Слайдер</h3>
-                    <p>Перфораторы</p>
-                    <P>Настоящие мужские игрушки</P>
-                    <figure><img src="img/slider2.jpg" alt="Рабочий"></figure>
-                    <button type="button" disabled>Назад</button>
-                    <button type="button">Вперед</button>  
-                    <a  href="catalog.html">Открыть Каталог</a>
-                </li>
-            </ul>
+        <ul>
+            <li>
+            <h3>Материалы</h3>
+                <a href="#">На любой вкус</a>
+                <img src="img/materials.svg" width="44" height="65" alt="банка"></li>
+            <li>
+                <h3>Инструменты</h3>
+                <a href="#">На все случаи</a>
+                <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
+            </li>
+            <li>
+                <h3>Техника</h3>
+                <a href="#">Для стройки</a>
+                <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
+            </li>
+            <li>
+                <h3>Сидки 50%</h3>
+                <a href="#">На 350 товаров</a>
+                <img src="img/discounts.svg" widht="59" height="62" alt="корзина">
+            </li>
+            <li>
+                <h3>Доставка</h3>
+                <a href="#">Бесплатно</a>
+                <img src="img/delivery.svg" width="78" height="63" alt="машина">
+            </li>
+            <li>
+                <h3>Слайдер</h3>
+                <p>Перфораторы</p>
+                <P>Настоящие мужские игрушки</P>
+                <figure><img src="img/slider2.jpg" alt="Рабочий"></figure>
+                <button type="button" disabled>Назад</button>
+                <button type="button">Вперед</button>  
+                <a  href="catalog.html">Открыть Каталог</a>
+            </li>
+        </ul>
     </section>       
     <section name="популярное">
         <h2>Популярные товары</h2>
-            <a href="#">Все популярные товары</a>
-            <ul>
-                <li>
-                    <h3>Bosch BFG 9000</h3>
-                    <img src="img/bosch9.jpg" width="184" height="164" alt="Bosh BFG 9000">
-                    <p>Перфоратор Bosch BFG 9000</p><br>
-                    <del>32500р.</del>
-                    <a href="#">25500р.</a>
-                </li>
-                <li>
-                   <h3>Bosh BFG 3000</h3>
-                    <img src="img/bosch3.jpg" width="127" height="112" alt="Bosh BFG 3000">
-                    <p>Перфоратор Bosch BFG 9000</p><br>
-                    <del>22500р.</del>
-                    <a href="#">15500р.</a>
-                </li>
-                <li>
-                    <h3>Bosh BFG 6000</h3>
-                    <img src="img/bosch6.jpg" width="144" height="128" alt="Bosh BFG 6000">
-                    <p>Перфоратор Bosch BFG 9000</p><br>
-                    <del>30500р.</del>
-                    <a href="#">25500р.</a>
-                </li>
-                <li>
-                    <h3>Bosh BFG 2000</h3>
-                    <img src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
-                    <p>Перфоратор Bosch BFG 9000</p><br>
-                    <del>32500р.</del>
-                    <a href="#">12500р.</a>
-                </li>
-            </ul>
+        <a href="#">Все популярные товары</a>
+        <ul>
+            <li>
+                <h3>Bosch BFG 9000</h3>
+                <img src="img/bosch9.jpg" width="184" height="164" alt="Bosh BFG 9000">
+                <p>Перфоратор Bosch BFG 9000</p><br>
+                <del>32500р.</del>
+                <a href="#">25500р.</a>
+            </li>
+            <li>
+               <h3>Bosh BFG 3000</h3>
+                <img src="img/bosch3.jpg" width="127" height="112" alt="Bosh BFG 3000">
+                <p>Перфоратор Bosch BFG 9000</p><br>
+                <del>22500р.</del>
+                <a href="#">15500р.</a>
+            </li>
+            <li>
+                <h3>Bosh BFG 6000</h3>
+                <img src="img/bosch6.jpg" width="144" height="128" alt="Bosh BFG 6000">
+                <p>Перфоратор Bosch BFG 9000</p><br>
+                <del>30500р.</del>
+                <a href="#">25500р.</a>
+            </li>
+            <li>
+                <h3>Bosh BFG 2000</h3>
+                <img src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
+                <p>Перфоратор Bosch BFG 9000</p><br>
+                <del>32500р.</del>
+                <a href="#">12500р.</a>
+            </li>
+        </ul>
     </section>
     <section name="производители">
         <h2>Популярные производители</h2>
@@ -188,6 +190,7 @@
             <a href="#">Заблудились? напишите нам!</a>
     </section>    
 </main>
+
 <footer>
     <section>
         <h2 name="footername">Техномарт</h2>
