@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
@@ -8,32 +8,32 @@
     <link rel="apple-touch-icon" href="img/Favicon180.png">
     <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
+<body class="page-body">
 
-<header>
-    <a>
+<header class="Main-header">
+    <a class="titel">
         <img src="img/technomart-logo.svg" width="220" height="68" alt="ТехномартЛого">
         <h1>Техномарт</h1>
     </a>
-    <form>
+    <form class="Search">
         <label for="search1">Поиск</label>
         <input type="search" id="search1" placeholder="Поиск">
     </form>
     <ul>
-        <li><a href="#">Закладки:0</a></li>
-        <li><a href="#">Корзина:0</a></li>
-        <li><a href="#">Оформить заказ</a></li>
+        <li><a class="button-header bookmark" href="#">Закладки:0</a></li>
+        <li><a class="button-header basket" href="#">Корзина:0</a></li>
+        <li><a class="button-header order" href="#">Оформить заказ</a></li>
     </ul>
     <ul>
-        <li>Интернет магазин<br>
+        <li class="info-header">Интернет магазин<br>
         Строительных материалов<br>
         и инструментов для ремонта</li>
-        <li><a href="tel:+78005558628">+7 800 500-86-28</a></li>
+        <li><a class="tel-header" href="tel:+78005558628">+7 800 500-86-28</a></li>
         <li>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</li>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Регистрация</a></li>
+        <li><a class="button-login Enter" href="#">Войти</a></li>
+        <li><a class="button-login registration" href="#">Регистрация</a></li>
     </ul>
-    <nav>
+    <nav class="main-navigation">
     <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="blank.html">Компания</a></li>
@@ -46,7 +46,7 @@
     </nav>
 </header>
 
-<main>
+<main class="conteiner">
     <section>
         <h2>Товары и услуги</h2>
         <ul>
@@ -79,15 +79,15 @@
                 <p>Перфораторы</p>
                 <P>Настоящие мужские игрушки</P>
                 <figure><img src="img/slider2.jpg" alt="Рабочий"></figure>
-                <button type="button" disabled>Назад</button>
-                <button type="button">Вперед</button>  
-                <a  href="catalog.html">Открыть Каталог</a>
+                <button class="button-navi back" type="button" disabled>Назад</button>
+                <button class="button-navi next" type="button">Вперед</button>
+                <a class="main-button"  href="catalog.html">Открыть Каталог</a>
             </li>
         </ul>
-    </section>       
+    </section>
     <section>
-        <h2>Популярные товары</h2>
-        <a href="#">Все популярные товары</a>
+      <h2>Популярные товары</h2>
+        <a class="main-button" href="#">Все популярные товары</a>
         <ul>
             <li>
                 <h3>Bosch BFG 9000</h3>
@@ -192,7 +192,7 @@
             Заехав в наш офис:</p>
             <img src="img/map2.png" width="300" height="158" alt="карта">
             <a href="#">Заблудились? напишите нам!</a>
-    </section>    
+    </section>
 </main>
 
 <footer>
@@ -264,4 +264,4 @@
         </form>
 </section>
 </body>
-</html> 
+</html>
