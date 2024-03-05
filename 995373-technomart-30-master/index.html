@@ -23,12 +23,13 @@
       <ul class="header-up-title">
         <li>
           <form class="Search">
-            <label for="search1">Поиск</label>
-            <input type="search" id="search1" placeholder="Поиск">
+            <img src="img/icon-search.svg" width="17" height="17" alt="">
+            <label for="search1">Поиск :</label>
+            <input type="search-zone" id="search1">
           </form>
         </li>
-        <li><a class="button-header bookmark" href="#">Закладки:0</a></li>
-        <li><a class="button-header basket" href="#">Корзина:0</a></li>
+        <li><a class="button-header bookmark" href="#">Закладки : 0</a></li>
+        <li><a class="button-header basket" href="#">Корзина : 0</a></li>
         <li><a class="button-header order" href="#">Оформить заказ</a></li>
       </ul>
     </div>
@@ -38,7 +39,10 @@
           Строительных материалов<br>
           и инструментов для ремонта</li>
         <div class="Contact-header">
-          <li><a class="tel-header" href="tel:+78005558628">+7 800 500-86-28</a></li>
+          <div class="tel-header">
+            <img src="img/icon-phone.svg" width="19" height="19" alt="">
+            <li><a class="tel-header-nomber" href="tel:+78005558628">+7 800 500-86-28</a></li>
+          </div>
           <li class="adress-header">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</li>
         </div>
         <div class="user-navigation">
@@ -63,51 +67,52 @@
   </header>
 
   <main class="conteiner">
-    <section class="product-group">
-      <h2>Товары и услуги</h2>
-      <ul class="all-categories">
-        <li class="Product-categories materials">
-          <h3>Материалы</h3>
-          <a class="button-product" href="#">На любой вкус</a>
-          <img src="img/materials.svg" width="44" height="65" alt="банка">
-        </li>
-        <li class="Product-categories instruments">
-          <h3>Инструменты</h3>
-          <a class="button-product" href="#">На все случаи</a>
-          <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
-        </li>
-        <li class="Product-categories vehicle">
-          <h3>Техника</h3>
-          <a class="button-product" href="#">Для стройки</a>
-          <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
-        </li>
-        <li class="Product-categories discounts">
-          <h3>Сидки 50%</h3>
-          <a class="button-product" href="#">На 350 товаров</a>
-          <img src="img/discounts.svg" width="59" height="62" alt="корзина">
-        </li>
-        <li class="Product-categories">
-          <h3>Доставка</h3>
-          <a class="button-product delivery" href="#">Бесплатно</a>
-          <img src="img/delivery.svg" width="78" height="63" alt="машина">
-        </li>
-      </ul>
-    </section>
-    <section class="slider">
-      <h3>Слайдер</h3>
-      <div class="slider-info">
-        <p>Перфораторы</p>
-        <P>Настоящие мужские игрушки</P>
-      </div>
-      <figure class="foto-slider">
-        <img src="img/slider2.jpg" width="620" height="266" alt="фото">
-        <img src="img/icon-left.svg" width="22" height="40" alt="icon-left">
-        <img src="img/icon-right.svg" width="22" height="40" alt="icon-right">
-        <button class="button-navi back" type="button" disabled>Назад</button>
-        <button class="button-navi next" type="button">Вперед</button>
-        <a class="main-button" href="catalog.html">Открыть Каталог</a>
-      </figure>
-    </section>
+    <div class="index-columns">
+      <section class="product-group">
+        <h2>Товары и услуги</h2>
+        <ul class="all-categories">
+          <li class="Product-categories materials">
+            <h3>Материалы</h3>
+            <a class="button-product" href="#">На любой вкус</a>
+            <img src="img/materials.svg" width="44" height="65" alt="банка">
+          </li>
+          <li class="Product-categories instruments">
+            <h3>Инструменты</h3>
+            <a class="button-product" href="#">На все случаи</a>
+            <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
+          </li>
+          <li class="Product-categories vehicle">
+            <h3>Техника</h3>
+            <a class="button-product" href="#">Для стройки</a>
+            <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
+          </li>
+          <li class="Product-categories discounts">
+            <h3>Сидки 50%</h3>
+            <a class="button-product" href="#">На 350 товаров</a>
+            <img src="img/discounts.svg" width="59" height="62" alt="корзина">
+          </li>
+          <li class="Product-categories delivery50">
+            <h3>Доставка</h3>
+            <a class="button-product delivery" href="#">Бесплатно</a>
+            <img src="img/delivery.svg" width="78" height="63" alt="машина">
+          </li>
+        </ul>
+      </section>
+      <section class="slider">
+        <div class="slider-info">
+          <h3>Перфораторы</h3>
+          <P>Настоящие мужские игрушки</P>
+        </div>
+        <figure class="foto-slider">
+          <img src="img/slider2.jpg" width="620" height="266" alt="фото">
+          <button class="button-navi back" type="button" disabled><img src="img/icon-left.svg" width="22" height="40"
+              alt="icon-left"></button>
+          <button class="button-navi next" type="button"><img src="img/icon-right.svg" width="22" height="40"
+              alt="icon-right"></button>
+          <a class="main-button" href="catalog.html">Открыть Каталог</a>
+        </figure>
+      </section>
+    </div>
     <section class="product-group">
       <article class="titel-head">
         <h2 class="titel-name">Популярные товары</h2>
@@ -115,25 +120,25 @@
       </article>
       <ul class="popular-products">
         <li class="cart-product">
-          <h3 class="name-product">Перфоратор Bosch BFG 9000</h3>
+          <h3 class="name-product">Перфоратор Bosch<br> BFG 9000</h3>
           <img src="img/bosch9.jpg" width="184" height="164" alt="Bosh BFG 9000">
           <del class="old-price">32500р.</del>
           <a class="button-price" href="#">25500р.</a>
         </li>
         <li class="cart-product">
-          <h3 class="name-product">Перфоратор Bosh BFG 3000</h3>
+          <h3 class="name-product">Перфоратор Bosh<br> BFG 3000</h3>
           <img src="img/bosch3.jpg" width="127" height="112" alt="Bosh BFG 3000">
           <del class="old-price">22500р.</del>
-          <a class="button-price" href="#">15500р.</a>
+          <a class="button-price" href="#"><img src="img/price-button.svg" width="141" height="38" alt="">15500р.</a>
         </li>
         <li class="cart-product">
-          <h3 class="name-product">Перфоратор Bosh BFG 6000</h3>
+          <h3 class="name-product">Перфоратор Bosh<br> BFG 6000</h3>
           <img src="img/bosch6.jpg" width="144" height="128" alt="Bosh BFG 6000">
           <del class="old-price">30500р.</del>
           <a class="button-price" href="#">25500р.</a>
         </li>
         <li class="cart-product">
-          <h3 class="name-product">Перфоратор Bosh BFG 2000</h3>
+          <h3 class="name-product">Перфоратор Bosh<br> BFG 2000</h3>
           <img src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
           <del class="old-price">32500р.</del>
           <a class="button-price" href="#">12500р.</a>
@@ -177,21 +182,24 @@
       <p class="info">Хороший интернет-магазин отличается не только ценами!<br>
         Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.
       </p>
-      <ul class="service-list">
-        <li class="service-item">
-          <h3 class="service-item-name">Доставка</h3>
-        </li>
-        <li class="service-item">
-          <h3 class="service-item-name">Гарантия</h3>
-        </li>
-        <li class="service-item">
-          <h3 class="service-item-name">Кредит</h3>
-        </li>
-      </ul>
-      <p class="titel-name">Доставка</p>
-      <p class="info">Мы с удовольствием доставим ваш товар пярмо<br>
+      <div class="service-list-block">
+        <ul class="service-list">
+          <li class="service-item">
+            <a class="service-item-name active" href="#">Доставка</a>
+          </li>
+          <li class="service-item">
+            <a class="service-item-name" href="#">Гарантия</a>
+          </li>
+          <li class="service-item">
+            <a class="service-item-name" href="#">Кредит</a>
+          </li>
+        </ul>
+        <img src="img/services-shadow.png" width="10" height="279" alt="">
+      </div>
+      <h2 class="titel-name delivery">Доставка</h2>
+      <p class="info">Мы с удовольствием доставим ваш товар прямо<br>
         к вашему подъезду совершенно бесплатно!<br>
-        Ведь мы не плохо заработаем,
+        Ведь мы не плохо заработаем,<br>
         поднимая его на ваш этаж!</p>
       <img src="img/service-delivery.png" width="468" height="261" alt="delivery">
     </section>
@@ -230,14 +238,14 @@
       </section>
       <section class="footer-navigation">
         <h2>ссылки</h2>
-        <ul class="footer-navigation first">
+        <ul class="footer-navigation-list first">
           <li><a href="blank.html">Компания</a></li>
           <li><a href="blank.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Доставка</a></li>
           <li><a href="blank.html">Контакты</a></li>
         </ul>
-        <ul class="footer-navigation second">
+        <ul class="footer-navigation-list second">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
