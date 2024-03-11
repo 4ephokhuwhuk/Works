@@ -15,40 +15,42 @@
 <body class="page-body">
 
   <header class="Main-header">
-    <div class="header-up">
-      <a class="titel">
-        <img src="img/technomart-logo.svg" width="108" height="18" alt="ТехномартЛого">
-        <h1>Техномарт</h1>
-      </a>
-      <ul class="header-up-title">
-        <li>
-          <form class="Search">
-            <img src="img/icon-search.svg" width="17" height="17" alt="">
-            <label for="search1">Поиск :</label>
-            <input type="search-zone" id="search1">
-          </form>
-        </li>
-        <li><a class="button-header bookmark" href="#">Закладки : 0</a></li>
-        <li><a class="button-header basket" href="#">Корзина : 0</a></li>
-        <li><a class="button-header order" href="#">Оформить заказ</a></li>
-      </ul>
+    <div class="main-header-bar">
+      <div class="header-up">
+        <a class="titel">
+          <img src="img/technomart-logo.svg" width="108" height="18" alt="ТехномартЛого">
+          <h1>Техномарт</h1>
+        </a>
+        <ul class="header-up-title">
+          <li>
+            <form class="Search">
+              <img src="img/icon-search.svg" width="17" height="17" alt="">
+              <label for="search1">Поиск :</label>
+              <input type="search-zone" id="search1">
+            </form>
+          </li>
+          <li><a class="button-header bookmark" href="#">Закладки : 0</a></li>
+          <li><a class="button-header basket" href="#">Корзина : 0</a></li>
+          <li><a class="button-header order" href="#">Оформить заказ</a></li>
+        </ul>
+      </div>
     </div>
     <div class="header-midle">
-      <ul class="header-info-list">
-        <li class="info-header">Интернет магазин<br>
-          Строительных материалов<br>
-          и инструментов для ремонта</li>
-        <div class="Contact-header">
-          <div class="tel-header">
-            <img src="img/icon-phone.svg" width="19" height="19" alt="">
-            <li><a class="tel-header-nomber" href="tel:+78005558628">+7 800 500-86-28</a></li>
-          </div>
-          <li class="adress-header">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</li>
+      <!--<ul class="header-info-list"> -->
+      <P class="info-header">Интернет магазин<br>
+        Строительных материалов<br>
+        и инструментов для ремонта</P>
+      <div class="Contact-header">
+        <div class="tel-header">
+          <img src="img/icon-phone.svg" width="19" height="19" alt="">
+          <a class="tel-header-nomber" href="tel:+78005558628">+7 800 500-86-28</a>
         </div>
-        <div class="user-navigation">
-          <li><a class="button-login Enter" href="#">Войти</a></li>
-          <li><a class="button-login registration" href="#">Регистрация</a></li>
-        </div>
+        <p class="adress-header">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      </div>
+      <div class="user-navigation">
+        <a class="button-login Enter" href="#">Войти</a>
+        <a class="button-login registration" href="#">Регистрация</a>
+      </div>
       </ul>
     </div>
     <div class="header-down">
@@ -67,57 +69,63 @@
   </header>
 
   <main class="conteiner">
-    <div class="index-columns">
-      <section class="product-group">
-        <h2>Товары и услуги</h2>
-        <ul class="all-categories">
-          <li class="Product-categories materials">
-            <h3>Материалы</h3>
-            <a class="button-product" href="#">На любой вкус</a>
-            <img src="img/materials.svg" width="44" height="65" alt="банка">
-          </li>
-          <li class="Product-categories instruments">
-            <h3>Инструменты</h3>
-            <a class="button-product" href="#">На все случаи</a>
-            <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
-          </li>
-          <li class="Product-categories vehicle">
-            <h3>Техника</h3>
-            <a class="button-product" href="#">Для стройки</a>
-            <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
-          </li>
-          <li class="Product-categories discounts">
-            <h3>Сидки 50%</h3>
-            <a class="button-product" href="#">На 350 товаров</a>
-            <img src="img/discounts.svg" width="59" height="62" alt="корзина">
-          </li>
-          <li class="Product-categories delivery50">
-            <h3>Доставка</h3>
-            <a class="button-product delivery" href="#">Бесплатно</a>
-            <img src="img/delivery.svg" width="78" height="63" alt="машина">
-          </li>
-        </ul>
-      </section>
-      <section class="slider">
-        <div class="slider-info">
-          <h3>Перфораторы</h3>
-          <P>Настоящие мужские игрушки</P>
-        </div>
-        <figure class="foto-slider">
-          <img src="img/slider2.jpg" width="620" height="266" alt="фото">
-          <button class="button-navi back" type="button" disabled><img src="img/icon-left.svg" width="22" height="40"
-              alt="icon-left"></button>
-          <button class="button-navi next" type="button"><img src="img/icon-right.svg" width="22" height="40"
-              alt="icon-right"></button>
-          <a class="main-button" href="catalog.html">Открыть Каталог</a>
-        </figure>
+    <div class="container-categories">
+      <div class="index-columns">
+        <section class="product-group">
+          <h2>Товары и услуги</h2>
+          <ul class="all-categories">
+            <div class="product-list1">
+              <li class="Product-categories materials">
+                <h3>Материалы</h3>
+                <a class="button-product" href="#">На любой вкус</a>
+                <img src="img/materials.svg" width="44" height="65" alt="банка">
+              </li>
+              <li class="Product-categories instruments">
+                <h3>Инструменты</h3>
+                <a class="button-product" href="#">На все случаи</a>
+                <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
+              </li>
+              <li class="Product-categories vehicle">
+                <h3>Техника</h3>
+                <a class="button-product" href="#">Для стройки</a>
+                <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
+              </li>
+            </div>
+            <div class="product-list2">
+              <li class="Product-categories discounts">
+                <h3>Сидки 50%</h3>
+                <a class="button-product" href="#">На 350 товаров</a>
+                <img src="img/discounts.svg" width="59" height="62" alt="корзина">
+              </li>
+              <li class="Product-categories delivery50">
+                <h3>Доставка</h3>
+                <a class="button-product delivery" href="#">Бесплатно</a>
+                <img src="img/delivery.svg" width="78" height="63" alt="машина">
+              </li>
+          </ul>
+        </section>
+        <section class="slider">
+          <div class="slider-info">
+            <h3>Перфораторы</h3>
+            <P>Настоящие мужские игрушки</P>
+          </div>
+          <figure class="foto-slider">
+            <img src="img/slider2.jpg" width="620" height="266" alt="фото">
+            <button class="button-navi back" type="button" disabled><img src="img/icon-left.svg" width="22" height="40"
+                alt="icon-left"></button>
+            <button class="button-navi next" type="button"><img src="img/icon-right.svg" width="22" height="40"
+                alt="icon-right"></button>
+            <a class="main-button" href="catalog.html">Открыть Каталог</a>
+          </figure>
+      </div>
       </section>
     </div>
+    </div>
     <section class="product-group">
-      <article class="titel-head">
+      <div class="titel-head">
         <h2 class="titel-name">Популярные товары</h2>
         <a class="main-button" href="#">Все популярные товары</a>
-      </article>
+      </div>
       <ul class="popular-products">
         <li class="cart-product">
           <h3 class="name-product">Перфоратор Bosch<br> BFG 9000</h3>
@@ -146,10 +154,10 @@
       </ul>
     </section>
     <section class="product-group">
-      <article class="titel-head">
+      <div class="titel-head">
         <h2 class="titel-name">Популярные производители</h2>
         <a class="main-button" href="#">Все производители</a>
-      </article>
+      </div>
       <ul class="popular-brand">
         <li class="brand">
           <a href="#"><img src="img/bosch-logo.png" width="126" height="37" alt="bosch"> </a>
