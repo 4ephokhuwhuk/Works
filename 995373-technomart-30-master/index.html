@@ -70,56 +70,54 @@
 
   <main class="conteiner">
     <div class="container-categories">
-      <div class="index-columns">
-        <section class="product-group">
-          <h2>Товары и услуги</h2>
-          <ul class="all-categories">
-            <div class="product-list1">
-              <li class="Product-categories materials">
-                <h3>Материалы</h3>
-                <a class="button-product" href="#">На любой вкус</a>
-                <img src="img/materials.svg" width="44" height="65" alt="банка">
-              </li>
-              <li class="Product-categories instruments">
-                <h3>Инструменты</h3>
-                <a class="button-product" href="#">На все случаи</a>
-                <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
-              </li>
-              <li class="Product-categories vehicle">
-                <h3>Техника</h3>
-                <a class="button-product" href="#">Для стройки</a>
-                <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
-              </li>
-            </div>
-            <div class="product-list2">
-              <li class="Product-categories discounts">
-                <h3>Сидки 50%</h3>
-                <a class="button-product" href="#">На 350 товаров</a>
-                <img src="img/discounts.svg" width="59" height="62" alt="корзина">
-              </li>
-              <li class="Product-categories delivery50">
-                <h3>Доставка</h3>
-                <a class="button-product delivery" href="#">Бесплатно</a>
-                <img src="img/delivery.svg" width="78" height="63" alt="машина">
-              </li>
-          </ul>
-        </section>
-        <section class="slider">
-          <div class="slider-info">
-            <h3>Перфораторы</h3>
-            <P>Настоящие мужские игрушки</P>
+      <section class="product-group">
+        <h2>Товары и услуги</h2>
+        <ul class="all-categories">
+          <div class="product-list1">
+            <li class="Product-categories materials">
+              <h3>Материалы</h3>
+              <a class="button-product" href="#">На любой вкус</a>
+              <img src="img/materials.svg" width="44" height="65" alt="банка">
+            </li>
+            <li class="Product-categories instruments">
+              <h3>Инструменты</h3>
+              <a class="button-product" href="#">На все случаи</a>
+              <img src="img/instruments.svg" width="75" height="61" alt="шуруповерт">
+            </li>
+            <li class="Product-categories vehicle">
+              <h3>Техника</h3>
+              <a class="button-product" href="#">Для стройки</a>
+              <img src="img/vehicle.svg" width="78" height="62" alt="трактор">
+            </li>
           </div>
-          <figure class="foto-slider">
-            <img src="img/slider2.jpg" width="620" height="266" alt="фото">
-            <button class="button-navi back" type="button" disabled><img src="img/icon-left.svg" width="22" height="40"
-                alt="icon-left"></button>
-            <button class="button-navi next" type="button"><img src="img/icon-right.svg" width="22" height="40"
-                alt="icon-right"></button>
-            <a class="main-button" href="catalog.html">Открыть Каталог</a>
-          </figure>
-      </div>
+          <div class="product-list2">
+            <li class="Product-categories discounts">
+              <h3>Сидки 50%</h3>
+              <a class="button-product" href="#">На 350 товаров</a>
+              <img src="img/discounts.svg" width="59" height="62" alt="корзина">
+            </li>
+            <li class="Product-categories delivery50">
+              <h3>Доставка</h3>
+              <a class="button-product delivery" href="#">Бесплатно</a>
+              <img src="img/delivery.svg" width="78" height="63" alt="машина">
+            </li>
+          </div>
+        </ul>
       </section>
-    </div>
+      <section class="slider">
+        <div class="slider-info">
+          <h3>Перфораторы</h3>
+          <P>Настоящие мужские игрушки</P>
+        </div>
+        <figure class="foto-slider">
+          <img src="img/slider2.jpg" width="620" height="266" alt="фото">
+          <button class="button-navi back" type="button" disabled><img src="img/icon-left.svg" width="22" height="40"
+              alt="icon-left"></button>
+          <button class="button-navi next" type="button"><img src="img/icon-right.svg" width="22" height="40"
+              alt="icon-right"></button>
+          <a class="main-button" href="catalog.html">Открыть Каталог</a>
+        </figure>
+      </section>
     </div>
     <section class="product-group">
       <div class="titel-head">
@@ -185,33 +183,38 @@
         </li>
       </ul>
     </section>
-    <section class="service">
-      <h2 class="titel-name service">Сервисы</h2>
-      <p class="info">Хороший интернет-магазин отличается не только ценами!<br>
-        Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.
-      </p>
-      <div class="service-list-block">
-        <ul class="service-list">
-          <li class="service-item">
-            <a class="service-item-name active" href="#">Доставка</a>
-          </li>
-          <li class="service-item">
-            <a class="service-item-name" href="#">Гарантия</a>
-          </li>
-          <li class="service-item">
-            <a class="service-item-name" href="#">Кредит</a>
-          </li>
-        </ul>
-        <img src="img/services-shadow.png" width="10" height="279" alt="">
-      </div>
-      <h2 class="titel-name delivery">Доставка</h2>
-      <p class="info">Мы с удовольствием доставим ваш товар прямо<br>
-        к вашему подъезду совершенно бесплатно!<br>
-        Ведь мы не плохо заработаем,<br>
-        поднимая его на ваш этаж!</p>
-      <img src="img/service-delivery.png" width="468" height="261" alt="delivery">
+    <div class="service-background">
+      <section class="service">
+        <h2 class="titel-name service">Сервисы</h2>
+        <p class="info">Хороший интернет-магазин отличается не только ценами!<br>
+          Мы стараемся изо всех сил, что бы сделать ваши покупки приятными.
+        </p>
+        <div class="service-content">
+          <div class="service-list-block">
+            <ul class="service-list">
+              <li class="service-item active">
+                <a class="service-item-name active" href="#">Доставка</a>
+              </li>
+              <li class="service-item">
+                <a class="service-item-name" href="#">Гарантия</a>
+              </li>
+              <li class="service-item">
+                <a class="service-item-name" href="#">Кредит</a>
+              </li>
+            </ul>
+            <!--<img src="img/services-shadow.png" width="10" height="279" alt="">-->
+          </div>
+          <div class="delivery-info">
+            <h2 class="titel-name delivery">Доставка</h2>
+            <p class="info">Мы с удовольствием доставим ваш товар прямо<br>
+              к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы не плохо заработаем,<br>
+              поднимая его на ваш этаж!</p>
+          </div>
+        </div>
+    </div>
     </section>
-    <article class="block-info">
+    <div class="block-info">
       <section class="company-info">
         <h2 class="titel-name">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
         <p class="info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
@@ -233,69 +236,69 @@
         <img class="map" src="img/map2.png" width="300" height="158" alt="карта">
         <a class="main-button feedback" href="#">Заблудились? напишите нам!</a>
       </section>
-    </article>
+    </div>
   </main>
 
   <footer class="main-footer">
-    <article class="footer-up">
-      <section class="footer-info">
-        <h2>Техномарт</h2>
+    <div class="footer-content">
+      <div class="footer-up">
         <img class="footer-logo" src="img/technomart-logo.svg" width="138" height="32" alt="Техномарт">
+        <section class="footer-navigation">
+          <ul class="footer-navigation-list first">
+            <li><a href="blank.html">Компания</a></li>
+            <li><a href="blank.html">Новости</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="blank.html">Доставка</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+      </div>
+      <div class="footer-midle">
         <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
           +7 800 555-86-28</p>
-      </section>
-      <section class="footer-navigation">
-        <h2>ссылки</h2>
-        <ul class="footer-navigation-list first">
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
         <ul class="footer-navigation-list second">
           <li><a href="#">Материалы</a></li>
           <li><a href="#">Техника</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a href="blank.html">Спецпредложения</a></li>
         </ul>
-      </section>
-    </article>
-    <article class="footer-down">
-      <section class="aditation-info">
-        <h2>Копирайт</h2>
-        <p>© 2010–2021 Компания «Техномарт»<br>
-          Все права защищены
-        </p>
-      </section>
-      <section>
-        <h2>ссылки на соцсети</h2>
-        <ul class="social">
-          <Li>
-            <a href="#"><img src="img/vk-icon.svg" width="44" height="44" alt="Вконтакте"></a>
-          </Li>
-          <Li>
-            <a href="#"><img src="img/facebook-icon.svg" width="44" height="44" alt="Facebook"></a>
-          </Li>
-          <Li>
-            <a href="#"><img src="img/insta-icon.svg" width="44" height="44" alt="instagram"></a>
-          </Li>
-        </ul>
-      </section>
+        </section>
+      </div>
+    </div>
+    <div class="footer-content-down">
+      <div class="footer-down">
+        <div class="footer-down-container">
+          <section class="aditation-info copirite">
+            <p class="copirite">© 2010–2021 Компания «Техномарт»<br>
+              Все права защищены
+            </p>
+          </section>
+          <section class="social-link">
+            <ul class="social">
+              <Li>
+                <a href="#"><img src="img/vk-icon.svg" width="44" height="44" alt="Вконтакте"></a>
+              </Li>
+              <Li>
+                <a href="#"><img src="img/facebook-icon.svg" width="44" height="44" alt="Facebook"></a>
+              </Li>
+              <Li>
+                <a href="#"><img src="img/insta-icon.svg" width="44" height="44" alt="instagram"></a>
+              </Li>
+            </ul>
+          </section>
 
-      <div class="aditation-info">
-        <p>
-          Обратная связь:
-        </p>
-        <a class="email" href="#">mail@htmlacademy.ru</a>
+          <div class="aditation-info">
+            <p>
+              Обратная связь:
+            </p>
+            <a class="email" href="#">mail@htmlacademy.ru</a>
+            <p>
+              Разработано
+            </p>
+            <a class="site" href="https://htmlacademy.ru">HTML Academy</a>
+          </div>
+        </div>
       </div>
-      <div class="aditation-info">
-        <p>
-          Разработано
-        </p>
-        <a class="site" href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
-    </article>
+    </div>
   </footer>
   <section class="modal">
     <h2>Обратная связь</h2>
