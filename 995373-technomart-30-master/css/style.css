@@ -104,6 +104,7 @@ img {
   height: 100%;
 }
 
+
 /* main-header */
 
 .Main-header {
@@ -113,6 +114,9 @@ img {
   margin-bottom: 59px;
 }
 
+.Main-header.catalog {
+  margin-bottom: 21px;
+}
 .main-header-bar {
   background-color: var(--very-dark-blue);
 }
@@ -189,6 +193,7 @@ h1,
   background-color: transparent;
   border: none;
 }
+
 
 /* User navigation */
 
@@ -510,6 +515,73 @@ h1,
 
 }
 
+/*Grid for pages */
+
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+  column-gap: 20px;
+}
+.page-catalog .breadcrumbs {
+  grid-column: 1 / -1;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.page-catalog .page-titel {
+  grid-column: 1 / -1;
+  background-color: var(--basic-gray);
+  height: 89px;
+  font-family: Cuprum;
+  margin-bottom: 20px;
+}
+.page-titel h1 {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top: 29px;
+  margin: 29px;
+}
+
+.catalog-info-zone {
+  background-color: var(--basic-gray);
+}
+
+.catalog-info {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100%;
+  justify-self: center;
+  font-family: PT Sans;
+}
+.catalog-info-titel {
+  font-style: Cuprum;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  margin-top:  59px;
+  padding-top: 64px;
+}
+
+.informacion {
+  font-size: 13px;
+  line-height: 24px;
+  align-content: start;
+  margin-top: 25px;
+  padding-bottom: 59px;
+}
+
+/* НЕ ЗНАЮ ПОЧЕМУ НЕ РАБОТАЕТ */
 
 /* footer */
 
@@ -577,7 +649,6 @@ h1,
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  outline-offset: -5px;
   margin: 0 auto;
   padding: 0 10px;
 }
