@@ -316,6 +316,10 @@ h1,
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  height: 38px;
+  justify-self: center;
 }
 
 .button-navi {
@@ -333,8 +337,8 @@ h1,
 /* titel */
 
 .titel-head {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  justify-content: space-between;
   background-color: var(--basic-milk);
   margin-bottom: 20px;
 }
@@ -411,20 +415,74 @@ h1,
   margin-bottom: 20px;
 }
 
-.brand a{
-  margin: 0 auto;
-  padding: 0 30px;
-  text-align: center;
+.brandbosch {
+  padding-top: 54px;
+  padding-left: 47px;
+  padding-right: 47px;
+  padding-bottom: 54px;
 }
+
+.bradmakita {
+  padding-top: 50px;
+  padding-left: 48px;
+  padding-right: 49px;
+  padding-bottom: 55px;
+}
+
+.branddewalt {
+  padding-top: 48px;
+  padding-left: 37px;
+  padding-right: 37px;
+  padding-bottom: 53px;
+}
+
+.brandinter {
+  padding-top: 34px;
+  padding-left: 9px;
+  padding-right: 11px;
+  padding-bottom: 35px;
+}
+
+.brandhitachi {
+  padding-top: 58px;
+  padding-left: 23px;
+  padding-right: 28px;
+  padding-bottom: 56px;
+}
+
+.brandlg {
+  padding-top: 35px;
+  padding-left: 48px;
+  padding-right: 51px;
+  padding-bottom: 37px;
+}
+
+.brandaeg {
+  padding-top: 23px;
+  padding-left: 35px;
+  padding-right: 34px;
+  padding-bottom: 24px;
+}
+
+.brandmetabo {
+  padding-top: 34px;
+  padding-left: 8px;
+  padding-right: 6px;
+  padding-bottom: 38px;
+}
+
 
 /* service */
 
 .service-background {
    background-color: var(--basic-gray);
+   width: 100%;
 }
 
 .service {
   width: 940px;
+  padding-top: 64px;
+  margin-top: 70px;
 }
 
 .service p {
@@ -449,24 +507,31 @@ h1,
 }
 
 .service-item {
-  list-style: none;
   height: 61px;
   width: 240px;
   background-color: var(--dark-blue);
+  padding-top: 13.5px;
 }
 
-.service-list-block {
+.service-list {
+  list-style: none;
   margin: 0;
   padding: 0;
-
+  margin-bottom: 99px;
+  margin-top: 70px;
 }
+
 
 .service-item a {
   font-family: "Cuprum";
   font-size: 21px;
   line-height: 30px;
+  font-weight: 700;
   color: var(--basic-white);
   padding-top: 13px;
+  margin-left: 22px;
+  box-shadow: #405069;
+  border-color: #293449;
 }
 
 .service-item.active{
@@ -477,10 +542,20 @@ h1,
   color: var(--dark-blue);
 }
 
-.service-item :hover {
+.service-list :hover {
   background-color: var(--very-dark-blue);
   color: var(--basic-white);
 }
+
+.service-item-name.active :hover {
+  color: var(--basic-white);
+}
+
+.service-list :active {
+  background-color: var(--basic-white);
+  color: #32425C;
+}
+
 
 .service-content {
   display: grid;
@@ -490,6 +565,9 @@ h1,
 .delivery-info {
  background-image: url(../img/service-delivery.png);
  background-repeat: no-repeat;
+ background-position: right;
+ background-position: bottom;
+ margin-top: 70px;
 }
 
 /* company-info */
@@ -512,8 +590,19 @@ h1,
   font-family: "Cuprum";
   font-size: 18px;
   line-height: 24px;
-
+  margin: 0;
+  padding: 0;
+  margin-top: 1px;
 }
+
+.line {
+  margin-right: 12px;
+}
+
+.delivery-company {
+  margin-bottom: 12px;
+}
+
 
 /*Grid for pages */
 
@@ -608,7 +697,7 @@ h1,
 
 .footer-midle {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 333px 2fr;
 }
 
 .footer-navigation-list {
