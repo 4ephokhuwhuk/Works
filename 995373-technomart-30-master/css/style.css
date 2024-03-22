@@ -232,16 +232,13 @@ h1,
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 59px;
 }
 
-.product-list1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  column-gap: 20px;
-}
-
-.product-list2 {
-  grid-template-columns: 2fr 1fr;
+.Product-categories:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .container-categories {
@@ -256,6 +253,8 @@ h1,
 .Product-categories {
   width: 300px;
   height: 123px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .Product-categories a {
@@ -268,11 +267,9 @@ h1,
 .Product-categories h3 {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--basic-white);
-  padding-top: 20px;
-  margin: 23 163px;
-
+  padding-left: 23px;
 }
 
 .materials {
@@ -295,19 +292,62 @@ h1,
   background-color: var(--basic-yellow);
 }
 
-.slider-info h3 {
+.slider h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
+  padding-top: 23px;
+  padding-left: 24px;
+  text-transform: uppercase;
 }
 
+.slider p {
+  font-size: 18px;
+  line-height: 24px;
+  margin-left: 24px;
+  margin-top: 5px;
+}
 .slider {
   background-color: #cccccc;
+  background-image: url(../img/slider2.jpg);
+  background-repeat: no-repeat;
   color: var(--basic-white);
+  width: 620px;
+  height: 266px;
+
+}
+
+.button-navi {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 570px;
+  margin-bottom: 39px;
+}
+
+.back,
+.next {
+  background-color: transparent;
+  border: none;
+}
+
+.back {
+  margin: -12px;
+  padding: 0;
+}
+
+.open {
+  min-width: 192px;
+  max-height: 38px;
 }
 
 .slider-info {
   background-color: transparent;
+  width: 620px;
+  height: 104px;
 }
 
 .main-button {
@@ -322,10 +362,6 @@ h1,
   justify-self: center;
 }
 
-.button-navi {
-  background-color: transparent;
-  border: none;
-}
 
 .button.disabled,
 .button:disabled {
