@@ -19,12 +19,11 @@
       <div class="header-up">
         <a class="titel">
           <img src="img/technomart-logo.svg" width="108" height="18" alt="ТехномартЛого">
-          <h1>Техномарт</h1>
+          <h1 class="visually-hidden">Техномарт</h1>
         </a>
         <ul class="header-up-title">
           <li>
             <form class="Search">
-              <img src="img/icon-search.svg" width="17" height="17" alt="">
               <label for="search1">Поиск :</label>
               <input type="search-zone" id="search1">
             </form>
@@ -43,7 +42,7 @@
       <div class="Contact-header">
         <div class="tel-header">
           <img src="img/icon-phone.svg" width="19" height="19" alt="">
-          <a class="tel-header-nomber" href="tel:+78005558628">+7 800 500-86-28</a>
+          <a class="tel-header-nomber" href="tel:+78005558628">+7 800 555-86-28</a>
         </div>
         <p class="adress-header">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
       </div>
@@ -54,7 +53,7 @@
       </ul>
     </div>
     <div class="header-down">
-      <nav class="main-navigation">
+      <nav>
         <ul class="navigation-list">
           <li><a class="navigation-item" href="index.html">Главная</a></li>
           <li><a class="navigation-item" href="blank.html">Компания</a></li>
@@ -71,7 +70,7 @@
   <main>
     <div class="conteiner">
       <section class="product-group">
-        <h2>Товары и услуги</h2>
+        <h2 class="visually-hidden">Товары и услуги</h2>
         <ul class="all-categories">
           <li class="Product-categories materials">
             <h3>Материалы</h3>
@@ -106,16 +105,18 @@
               </figure>
             </div>
           </li>
-          <li class="Product-categories discounts">
-            <h3>Сидки 50%</h3>
-            <a class="button-product" href="#">На 350 товаров</a>
-            <!--<img src="img/discounts.svg" width="59" height="62" alt="корзина">-->
-          </li>
-          <li class="Product-categories delivery50">
-            <h3>Доставка</h3>
-            <a class="button-product delivery" href="#">Бесплатно</a>
-            <!--<img src="img/delivery.svg" width="78" height="63" alt="машина">-->
-          </li>
+          <div class="product-coloms">
+            <li class="Product-categories discounts">
+              <h3>Сидки 50%</h3>
+              <a class="button-product" href="#">На 350 товаров</a>
+              <!--<img src="img/discounts.svg" width="59" height="62" alt="корзина">-->
+            </li>
+            <li class="Product-categories delivery50">
+              <h3>Доставка</h3>
+              <a class="button-product delivery" href="#">Бесплатно</a>
+              <!--<img src="img/delivery.svg" width="78" height="63" alt="машина">-->
+            </li>
+          </div>
         </ul>
       </section>
       <!--<section class="slider">
