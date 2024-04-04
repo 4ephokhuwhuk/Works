@@ -120,31 +120,68 @@
         </div>
         <ul class="popular-products">
           <li class="cart-product">
-            <h3 class="name-product">Перфоратор Bosch<br> BFG 9000</h3>
-            <img src="img/bosch9.jpg" width="184" height="164" alt="Bosh BFG 9000">
-            <del class="old-price">32500р.</del>
-            <a class="button-price" href="#">25500р.</a>
+            <a href="product.html">
+              <h3>
+                <span class="catalog-brand">Перфоратор Bosh</span><br>
+                <span class="catalog-model">BFG 9000</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img class="bosch9000" src="img/bosch9.jpg" width="184" height="164" alt="Bosh BFG 9000">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <del class="old-price">32500р.</del><br>
+              <button class="button-price" type="button">25500р.</button>
+            </p>
           </li>
           <li class="cart-product">
-            <h3 class="name-product">Перфоратор Bosh<br> BFG 3000</h3>
-            <img src="img/bosch3.jpg" width="127" height="112" alt="Bosh BFG 3000">
-            <del class="old-price">22500р.</del>
-            <a class="button-price" href="#"><img src="img/price-button.svg" width="141" height="38" alt="">15500р.</a>
+            <a href="product.html">
+              <h3>
+                <span class="catalog-brand">Перфоратор Bosh</span><br>
+                <span class="catalog-model">BFG 3000</span>
+              </h3>
+              <p class="catalog-item-image new3000">
+                <img class="bosch3000" src="img/bosch3.jpg" width="127" height="112" alt="Bosh BFG 3000">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <del class="old-price">22500р.</del><br>
+              <button class="button-price" type="button">15500р.</button>
+            </p>
           </li>
           <li class="cart-product">
-            <h3 class="name-product">Перфоратор Bosh<br> BFG 6000</h3>
-            <img src="img/bosch6.jpg" width="144" height="128" alt="Bosh BFG 6000">
-            <del class="old-price">30500р.</del>
-            <a class="button-price" href="#">25500р.</a>
+            <a href="product.html">
+              <h3>
+                <span class="catalog-brand">Перфоратор Bosh</span><br>
+                <span class="catalog-model">BFG 6000</span>
+              </h3>
+              <p class="catalog-item-image">
+                <img class="bosch6000" src="img/bosch6.jpg" width="144" height="128" alt="Bosh BFG 6000">
+              </p>
+            </a>
+            <p class="catalog-item-price">
+              <del class="old-price">30500р.</del><br>
+              <button class="button-price" type="button">25500р.</button>
+            </p>
           </li>
           <li class="cart-product">
-            <h3 class="name-product">Перфоратор Bosh<br> BFG 2000</h3>
-            <img src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
-            <del class="old-price">32500р.</del>
-            <a class="button-price" href="#">12500р.</a>
+            <a href="product.html">
+              <h3>
+                <span class="catalog-brand">Перфоратор Bosh</span><br>
+                <span class="catalog-model">BFG 2000</span>
+              </h3>
+              <p class="catalog-item-image new2000">
+                <img class="bosch2000" src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
+              </p>
+              </a>
+              <p class="catalog-item-price">
+                <del class="old-price">22500р.</del><br>
+                <button class="button-price" type="button">12500р.</button>
+              </p>
           </li>
         </ul>
       </section>
+
       <section class="product-group">
         <div class="titel-head">
           <h2 class="titel-name">Популярные производители</h2>
@@ -178,6 +215,7 @@
         </ul>
       </section>
     </div>
+
     <div class="service-background">
       <section class="service conteiner">
         <h2 class="titel-name service1">Сервисы</h2>
@@ -186,7 +224,7 @@
         </p>
         <div class="service-content">
           <ul class="service-list">
-            <li class="service-item active">
+            <!-------------------------------------------------<li class="service-item active">
               <a class="service-item-name active" href="#">Доставка</a>
             </li>
             <li class="service-item">
@@ -194,6 +232,21 @@
             </li>
             <li class="service-item">
               <a class="service-item-name" href="#">Кредит</a>
+            </li>-->
+            <li class="service-item activebox">
+              <input class="visually-hidden service-checkbox" type="radio" name="serviceradio" id="radiodelivery"
+                value="delivery-radio" checked>
+              <label for="radiodelivery">Доставка</label>
+            </li>
+            <li class="service-item">
+              <input class="visually-hidden service-checkbox" type="radio" name="serviceradio" id="radiogarant"
+                value="Garant-radio">
+              <label for="radiogarant">Гарантия</label>
+            </li>
+            <li class="service-item">
+              <input class="visually-hidden service-checkbox" type="radio" name="serviceradio" id="radioCredit"
+                value="Credit-radio">
+              <label for="radioCredit">Кредит</label>
             </li>
           </ul>
           <!--<img src="img/services-shadow.png" width="10" height="279" alt="">-->
@@ -217,15 +270,14 @@
           Техномар работает со всеми транспортными компаниями:</p>
         <ul class="delivery-list">
           <li class="delivery-company">
-            <img class="line" src="img/Layer23.svg" width="25" height="2" alt="">Деловые
-            линии
+            Деловые линии
           </li>
-          <li class="delivery-company"><img class="line" src="img/Layer23.svg" width="25" height="2" alt="">Автотрейдинг
+          <li class="delivery-company">Автотрейдинг
           </li>
-          <li class="delivery-company"><img class="line" src="img/Layer23.svg" width="25" height="2"
-              alt="">ЖелДорЭкспедиция</li>
+          <li class="delivery-company">ЖелДорЭкспедиция
+          </li>
         </ul>
-        <a class="main-button" href="#">Подробнее о компании</a>
+        <a class="main-button company-button" href="#">Подробнее о компании</a>
       </section>
       <section class="Contacts">
         <h2 class="titel-name">Контакты</h2>
@@ -304,17 +356,17 @@
           </section>
 
           <div class="aditation-info">
-           <div class="aditation-info-mail">
+            <div class="aditation-info-mail">
               <p class="aditation-info-about">
                 Обратная связь:<br>
-              <a class="email" href="#">mail@htmlacademy.ru</a>
-            </p>
+                <a class="email" href="#">mail@htmlacademy.ru</a>
+              </p>
             </div>
             <div class="autor">
               <p class="aditation-info-about">
                 Разработано -<br>
-              <a class="site" href="https://htmlacademy.ru">htmlacademy.ru</a>
-            </p>
+                <a class="site" href="https://htmlacademy.ru">htmlacademy.ru</a>
+              </p>
             </div>
           </div>
         </div>
