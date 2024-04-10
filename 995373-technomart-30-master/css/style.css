@@ -159,13 +159,15 @@ img {
   padding-right: 0px;
 }
 
+
 .header-down {
   background-color: var(--dark-blue);
-  width: 940px;
+  width: 945px;
   height: 55px;
   margin: 0 auto;
   padding: 0 auto;
   margin-bottom: 60px;
+  margin-top: -20px;
   border-bottom-width: 5px;
   border-bottom-style: solid;
   border-bottom-color: var(--very-dark-blue);
@@ -215,7 +217,6 @@ h1,
   height: 42px;
   margin: 0;
   padding-top: 9px;
-  justify-content: center;
 }
 
 .header-up-title a,
@@ -269,6 +270,11 @@ h1,
   text-align: center;
 }
 
+.basket-catalog{
+  background-color: var(--basic-coral);
+  max-height: 42px;
+}
+
 .bookmark::before {
   content: "";
   position: absolute;
@@ -286,7 +292,7 @@ h1,
   content: "";
   position: absolute;
   top: 12px;
-  left: 5px;
+  left: 10px;
   width: 17px;
   height: 17px;
   background-image: url(../img/icon-cart.svg);
@@ -389,13 +395,81 @@ h1,
   width: 150px;
 }
 
+.login-active {
+  display: flex;
+  flex-direction: column;
+  max-width: 299px;
+  list-style: none;
+}
+
+.login-name {
+  display: inline-block;
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+  background-color: var(--basic-white);
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: -18px;
+  width: 299px;
+  position: relative;
+}
+
+.login-name a {
+  color: var(--black);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.under-login-button {
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  color: var(--dark-blue);
+  margin-top: 7px;
+  position: relative;
+}
+
+.under-login-button a{
+  color: var(--dark-blue);
+}
+
+.under-login-button::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: 160px;
+  height: 4px;
+  width: 4px;
+  color: #32425C;
+  background-color: #32425C;
+  border-radius: 50%;
+}
+
+.under-login-button a:hover {
+  color: var(--basic-coral);
+}
+
+.under-login-button a:focus {
+  color: #C5C5C5;
+}
+
+/*.login-name .login-picture:hover{
+  fill: #3D546F;
+}  Не поёт )))   */
+
 /* User navigation */
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding-left: 43px;
+  padding-right: 43px;
   list-style: none;
   justify-content: space-between;
 }
