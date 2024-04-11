@@ -1175,6 +1175,42 @@ h1,
   column-gap: 20px;
 }
 
+.breadcrumbs {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs a{
+  color: var(--black);
+}
+
+.breadcrumbs li {
+  margin-right: 40px;
+  position: relative;
+}
+
+.breadcrumbs li::before{
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 3px;
+  height: 12px;
+  width: 8px;
+  background-image: url(../img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0px;
+}
+
+.home::before {
+  display: none;
+}
+
 .page-catalog .breadcrumbs {
   grid-column: 1 / -1;
   margin: 0;
