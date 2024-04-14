@@ -102,70 +102,83 @@
       <div class="page-titel">
         <h1>Перфораторы</h1>
       </div>
-      <h2>Фильтр</h2>
+      <!--<div class="titel-filter"> -->
+      <section class="filters-title">
+        <h2 class="title-catalog">Фильтр:</h2>
+      </section>
       <section class="filters-sort">
-        <div class="sort">
-          <fieldset>
-            <legend>Сортировка</legend>
-            <ul class="sort-list">
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По функционалу</li>
-              <li><button class="up"><img src="img/icon-down-dir.svg"></button></li>
-              <li><button class="down"><img src="img/shape.svg"></button></li>
-            </ul>
-            <!-- не понятно как сделать -->
-          </fieldset>
+        <h2 class="title-catalog">Сортировка:</h2>
+        <ul class="sort-list">
+          <li><a class="active-filter" href="#">По цене</a></li>
+          <li><a class="passive-filter" href="#">По типу</a></li>
+          <li><a class="passive-filter" href="#">По функционалу</a></li>
+        </ul>
+        <div class="button-sort">
+          <button class="up"><img src="img/icon-down-dir.svg"></button></li>
+          <button class="down"><img src="img/shape.svg"></button></li>
         </div>
       </section>
+      <!-- </div>-->
       <section class="filters">
         <form class="filter" method="get" action="https://encho.htmlacademy.ru"
           oninput="outprice.value=pricerange.value">
-          <fieldset class="filter-price">
-            <legend><label for="pricerange">Цена</label></legend>
-            <output name="outpricec">0</output>
-            <input name="price" id="pricerange" type="range" min="0" max="35000" step="1000" value="30000">
-            <output name="outprice">30000</output>
-          </fieldset>
-          <fieldset class="filter-brand">
-            <legend>Производители:</legend>
-            <ul class="brandlist">
-              <li class="checkboxbrand">
-                <input type="checkbox" name="BOSCH" id="filter-Bosch" checked>
-                <label for="filter-Bosch">BOSCH</label>
-              </li>
-              <li class="checkboxbrand">
-                <input type="checkbox" name="interskol" id="filter-interskol">
-                <label for="filter-interskol">ИНТЕРСКОЛ</label>
-              </li>
-              <li class="checkboxbrand">
-                <input type="checkbox" name="MAKITA" id="filter-makita" checked>
-                <label for="filter-makita">MAKITA</label>
-              </li>
-              <li class="checkboxbrand">
-                <input type="checkbox" name="DEWALT" id="filter-dewalt">
-                <label for="filter-dewalt">DEWALT</label>
-              </li>
-              <li class="checkboxbrand">
-                <input type="checkbox" name="HITACHI" id="filter-hitachi">
-                <label for="filter-hitachi">HITACHI</label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="filter-price-block">
+            <fieldset class="filter-price">
+              <legend><label for="pricerange">Цена</label></legend>
+              <output name="outpricec">0</output>
+              <input class="visually-hidden" name="price" id="pricerange" type="range" min="0" max="35000" step="1000"
+                value="30000">
+              <output name="outprice">30000</output>
+            </fieldset>
+          </div>
+          <div class="filter-brand-block">
+            <fieldset class="filter-brand">
+              <legend>Производители:</legend>
+              <ul class="brandlist">
+                <li class="checkboxbrand">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="BOSCH" id="filter-Bosch"
+                    checked>
+                  <label  for="filter-Bosch">BOSCH</label>
+                </li>
+                <li class="checkboxbrand">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="interskol"
+                    id="filter-interskol">
+                  <label  for="filter-interskol">ИНТЕРСКОЛ</label>
+                </li>
+                <li class="checkboxbrand">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="MAKITA" id="filter-makita"
+                    checked>
+                  <label  for="filter-makita">MAKITA</label>
+                </li>
+                <li class="checkboxbrand">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="DEWALT" id="filter-dewalt">
+                  <label  for="filter-dewalt">DEWALT</label>
+                </li>
+                <li class="checkboxbrand">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="HITACHI"
+                    id="filter-hitachi">
+                  <label  for="filter-hitachi">HITACHI</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-radio-block">
           <fieldset class="filter-radio">
             <legend>Питание</legend>
-            <h3>Питание</h3>
-            <ul>
+            <ul class="radio-list">
               <li class=radiopit>
-                <input type="radio" name="radio-pit" id="acum" value="Accumulator" checked>
-                <label for="acum">Аккумуляторные</label>
+                <input class="visually-hidden filter-input-radio" type="radio" name="radio-pit" id="acum"
+                  value="Accumulator" checked>
+                <label  for="acum">Аккумуляторные</label>
               </li>
               <li class=radiopit>
-                <input type="radio" name="radio-pit" id="network" value="networking">
-                <label for="network">Сетевые</label>
+                <input class="visually-hidden filter-input-radio" type="radio" name="radio-pit" id="network"
+                  value="networking">
+                <label  for="network">Сетевые</label>
               </li>
             </ul>
           </fieldset>
+        </div>
           <button class="filter-bottom" type="submit">Показать</button>
         </form>
       </section>
@@ -215,8 +228,8 @@
               <del class="old-price">30500р.</del><br>
               <button class="button-price" type="button">25500р.</button>
             </p>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>
+            <button class="visually-hidden" type="button">Купить</button>
+            <button class="visually-hidden" type="button">В закладки</button>
           </li>
           <li class="cart-product">
             <a href="product.html">
@@ -319,7 +332,7 @@
           <li class="catalog-bottom">
             <a href="#">3</a>
           </li>
-          <li class="catalog-bottom">
+          <li class="catalog-bottom catalog-next">
             <a href="#">Следующая</a>
           </li>
         </ul>
