@@ -172,12 +172,13 @@
               <p class="catalog-item-image new2000">
                 <img class="bosch2000" src="img/bosch2.jpg" width="127" height="112" alt="Bosh BFG 2000">
               </p>
-              </a>
-              <p class="catalog-item-price">
-                <del class="old-price">22500р.</del><br>
-                <button class="button-price" type="button">12500р.</button>
-              </p>
+            </a>
+            <p class="catalog-item-price">
+              <del class="old-price">22500р.</del><br>
+              <button class="button-price" type="button">12500р.</button>
+            </p>
           </li>
+          
         </ul>
       </section>
 
@@ -211,6 +212,7 @@
           <li class="brand">
             <a href="#"><img class="brandmetabo" src="img/metabo-logo.png" width="206" height="73" alt="metabo"> </a>
           </li>
+
         </ul>
       </section>
     </div>
@@ -261,7 +263,7 @@
     </section>
     <div class="block-info conteiner">
       <section class="company-info">
-        <h2 class="titel-name">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
+        <h2 class="titel-name">Компания «ТЕХНОМАРТ»</h2>
         <p class="info">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
           ремонта и строительства не оставит равнодушными любителей сэкономить на<br>
           гастарбайтерах.</p>
@@ -372,23 +374,35 @@
       </div>
     </div>
   </footer>
-  <section class="modal">
-    <h2>Обратная связь</h2>
+  <section class="modal modal-fb">
+    <h2 class="visually-hidden">Обратная связь</h2>
     <form class="modal-feedback" action="https://encho.htmlacademy.ru" method="post">
-      <img src="img/feedback-onbject.png" width="620" height="7" alt="">
       <article class="modal-feedback-up">
-        <label class="name" for="yourname">Ваше имя:</label>
-        <input id="yourname" type="text" placeholder="Имя Фамилия">
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="email" placeholder="email@example.com">
-        <label for="post">Текст письма:</label>
-        <textarea id="post" rows="5" placeholder="В свободной форме"></textarea>
+        <span class="forms-fb">
+          <p class="name-fb">
+            <label class="name" for="yourname">Ваше имя:</label>
+            <input id="yourname" type="text" placeholder="Имя Фамилия">
+          </p>
+          <p class="mail-fb">
+            <label for="email">Ваш e-mail:</label>
+            <input id="email" type="email" placeholder="email@example.com">
+          </p>
+        </span>
+        <p class="text-fb">
+          <label for="post">Текст письма:</label>
+          <textarea id="post" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
       </article>
       <article class="modal-feedback-down">
-        <input class="main-button modal-feedback" type="submit" value="Отправить">
+        <button class="main-button modal-feedback-button" type="submit">Отправить</button>
       </article>
-      <button class="button-close" type="button">Закрыть</button>
+      <button class="button-close" type="button" aria-label="Закрыть"></button>
     </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2>Как до нас добраться</h2>
+    <button class="button-close" type="button" ></button>
   </section>
 </body>
 
