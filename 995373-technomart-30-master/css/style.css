@@ -1115,9 +1115,9 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
 .service-item::after{
   content: "";
   position: absolute;
-  left: 252px;
-  top: -80px;
-  height: 200px;
+  left: 230px;
+  top: -65px;
+  height: 150px;
   width: 10px;
   background-image: url(../img/Object.png);
   background-repeat: no-repeat;
@@ -1336,7 +1336,7 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   background-color: var(--basic-gray);
   height: 89px;
   font-family: Cuprum;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .page-titel h1 {
@@ -1375,7 +1375,7 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 400;
-  padding-left: 18px;
+  padding-left: 19px;
 }
 
 .filters-sort {
@@ -1387,40 +1387,57 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   background-color: var(--body-);
   border-radius: 3px;
   max-height: 38px;
-  vertical-align: middle;
+  margin-right: 0px;
 }
 
 .sort-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-  margin-left: 80px;
-  column-gap: 65px;
+  margin-top: 10px;
+  padding-right:0px;
+  padding-left: 108px;
+  min-width: 350px;
+}
+
+
+.function-filter {
+  margin-left: 6px;
 }
 
 .active-filter {
   color: var(--basic-coral);
+  padding-left: 2px;
 }
+
+.type-filter {
+  margin-left: 6px;
+}
+
 
 .passive-filter {
   color: var(--text-del);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: var(--basic-coral);
-  text-underline-offset: 4px;
+  text-underline-offset: 3px;
 }
 
 .button-sort{
   display: flex;
-  column-gap: 10px;
-  margin-right: 17px;
-  margin-left: 46px;
+  column-gap: 8px;
+  margin-right: 10px;
+  margin-left:10px;
 }
+
+
 
 .button-sort button {
   border: 0px;
   background-color: transparent;
   height: 15px;
   margin-top: 13px;
+  cursor: pointer;
 }
 
 
@@ -1457,13 +1474,14 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-bottom: 10px;
   border-width: 1px;
   border-style: solid;
   border-color: #E5E5E5;
-  margin-right: 10px;
-  min-width: 38px;
+  margin-right: 9px;
+  min-width: 37px;
+  max-height: 36px;
   border-radius: 3px;
 }
 
@@ -1483,8 +1501,8 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
 
 
 .catalog-next a{
-  padding-left: 21px;
-  padding-right: 21px;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
 .now {
@@ -1514,36 +1532,122 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
 }
 
 .filter-price-block {
-  height: 150px;
+  height: 193px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.filter-price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  margin-top: 10px;
+}
+
+.range-controle {
+  position: relative;
+  height: 41px;
+  margin-bottom: 9px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--body-);
+  border-radius: 5px;
+}
+
+.range-controle .scale {
+  height: 2px;
+  background: #C5C5C5;
+}
+
+.range-controle .bar {
+  width: 80%;
+  height: 2px;
+  background: #63A63E;
+}
+
+.range-controle .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #FFFFFF;
+  background-color: #ABABAB;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px #cfcfcf;
+  cursor: pointer;
+}
+
+.range-controle .toggle-min {
+  left: 18px;
+}
+
+.range-controle .toggle-max {
+  left: 160px;
+}
+
+.price-controle input {
+  width: 76px;
+  padding: 10px;
+  text-align: center;
+  color: var(--black);
+  border: none;
+  border-radius: 3px;
+  background: var(--body-);
+  font-size: 17px;
+  line-height: 18px;
+  margin-bottom: 40px;
+}
+
+.price-controle label {
+  margin: 0;
+}
+
+.price-controle .max-price {
+  margin-right: -1px;
 }
 
 .filter-brand-block {
-  height: 266px;
+  height: 250px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-bottom-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
 }
 
 .filter-radio-block {
-  height: 180px;
+  height: 152px;
 }
 
 .brandlist,
 .radio-list {
   list-style: none;
-  padding-left: 40px;
+  padding-left: 35px;
   padding-bottom: 0px;
   text-transform: uppercase;
+}
+
+.brandlist label {
+  font-size: 15px;
+  line-height: 19px;
 }
 
 .brandlist li{
  margin-bottom: 20px;
 }
 .radio-list li {
-  padding-top: 22px;
+  padding-top: 5px;
+  margin-bottom: 18px;
+}
+
+.radio-list {
   margin-bottom: 0px;
 }
 
@@ -1558,18 +1662,19 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
 .filter-input-checkbox + label::before{
   content: "";
   position: absolute;
-  left: -40px;
-  width: 22px;
-  height: 22px;
+  top: -3px;
+  left: -35px;
+  width: 19px;
+  height: 19px;
   border: solid 2px #C5C5C5;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .filter-input-checkbox:checked + label::after{
   content: "";
   position: absolute;
-  left: -38px;
-  top: 5px;
+  left: -31px;
+  top: -2px;
   width: 22px;
   height: 17px;
   background-image: url(../img/ShapeV.svg);
@@ -1577,24 +1682,29 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   background-position: 0 0;
 }
 
+.radio-list label {
+  font-size: 15px;
+  line-height: 19px;
+}
+
 .filter-input-radio + label::before{
   content: "";
   position: absolute;
-  left: -40px;
-  top: -3px;
-  width: 20px;
-  height: 20px;
-  border: solid 5px #C5C5C5;
+  left: -35px;
+  top: -2px;
+  width: 17px;
+  height: 17px;
+  border: solid 4px #C5C5C5;
   border-radius: 50%;
 }
 
 .filter-input-radio:checked + label::after{
   content: "";
   position: absolute;
-  left: -31px;
+  left: -27px;
   top: 6px;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 9px;
   background-color: #C5C5C5;
   border-radius: 50%;
 }
@@ -1612,22 +1722,26 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   line-height: 18px;
 }
 
+
 .catalog-info-titel {
-  font-style: Cuprum;
+  list-style: none;
+  font-family: Cuprum;
+  color: var(--black);
   text-transform: uppercase;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
-  margin-top: 59px;
-  padding-top: 64px;
+  margin-top: 57px;
+  padding-top: 65px;
 }
 
 .informacion {
+  font-family: PT Sans;
   font-size: 13px;
-  line-height: 24px;
+  line-height: 25px;
   align-content: start;
-  margin-top: 25px;
-  padding-bottom: 59px;
+  margin-top: 20px;
+  padding-bottom: 66px;
   margin-bottom: 0px;
 }
 
