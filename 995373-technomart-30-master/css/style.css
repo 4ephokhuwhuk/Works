@@ -1133,6 +1133,11 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   border-top-color: white;
 }
 
+.activebox:hover {
+ color: var(--basic-white);
+}
+
+
 
 .service-list :hover {
   background-color: var(--very-dark-blue);
@@ -1141,12 +1146,14 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
 
 
 .service-checkbox:checked+label {
-  background-color: var(--basic-white);
+  background-color: transparent;
   color: #32425C;
+  border:transparent;
 }
 
 .service-item:active {
   background-color: var(--basic-white);
+  color: var(--dark-blue);
 }
 
 .service-content {
@@ -1266,6 +1273,7 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 /*Grid for pages */
 
@@ -1940,6 +1948,8 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   width: 620px;
   display: none;
 }
+
+
 .modal input,
 .modal textarea {
   font-family: PT Sans;
@@ -2043,4 +2053,25 @@ box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.20);
   background-color: var(--basic-gray);
 }
 
+@keyframes bounce {
+  0% { transform: translateY(-2000px); }
+  70% { transform: translateY(30px); }
+  90% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+  }
 
+  .modal-show {
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+  }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  }
+  .modal-error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+  }
