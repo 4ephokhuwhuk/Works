@@ -209,7 +209,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">30500 Р.</span><br>
-              <button class="button-price" type="button">25500 Р.</button>
+              <button class="button-price-catalog" type="button">25500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -224,7 +224,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">30500 Р.</span><br>
-              <button class="button-price" type="button">25500 Р.</button>
+              <button class="button-price-catalog" type="button">25500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -239,7 +239,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">30500 Р.</span><br>
-              <button class="button-price" type="button">25500 Р.</button>
+              <button class="button-price-catalog" type="button">25500 Р.</button>
             </p>
             <button class="visually-hidden" type="button">Купить</button>
             <button class="visually-hidden" type="button">В закладки</button>
@@ -256,7 +256,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">22500 Р.</span><br>
-              <button class="button-price" type="button">15500 Р.</button>
+              <button class="button-price-catalog" type="button">15500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -271,7 +271,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">30500 Р.</span><br>
-              <button class="button-price" type="button">25500 Р.</button>
+              <button class="button-price-catalog" type="button">25500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -286,7 +286,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price visually-hidden">22500 Р.</span><br>
-              <button class="button-price" type="button">12500 Р.</button>
+              <button class="button-price-catalog" type="button">12500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -301,7 +301,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">22500 Р.</span><br>
-              <button class="button-price" type="button">15500 Р.</button>
+              <button class="button-price-catalog" type="button">15500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -316,7 +316,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price">30500 Р.</span><br>
-              <button class="button-price" type="button">25500 Р.</button>
+              <button class="button-price-catalog" type="button">25500 Р.</button>
             </p>
           </li>
           <li class="cart-product">
@@ -331,7 +331,7 @@
             </a>
             <p class="catalog-item-price">
               <span class="old-price visually-hidden">22500 Р.</span><br>
-              <button class="button-price" type="button">12500 Р.</button>
+              <button class="button-price-catalog" type="button">12500 Р.</button>
             </p>
           </li>
         </ul>
@@ -453,25 +453,17 @@
       </div>
     </div>
   </footer>
-  <section class="visually-hidden">
-    <h2>Обратная связь</h2>
-    <form action="https://encho.htmlacademy.ru" method="post">
-      <label for="yourname">Ваше имя:</label>
-      <input id="yourname" type="text" placeholder="Имя Фамилия">
-      <label for="email">Ваш e-mail:</label>
-      <input id="email" type="email" placeholder="email@example.com">
-      <label for="post">Текст письма:</label>
-      <textarea id="post" rows="5" placeholder="В свободной форме"></textarea>
-      <input type="submit" value="Отправить">
-      <button type="button">Закрыть</button>
-    </form>
+  <section class="modal product-basket">
+    <span class="modalpb-up">
+      <h2>Товар добавлен в корзину!</h2>
+    </span>
+    <span class="modalpb-down">
+      <button class="main-button placeorder" type="button">Оформить заказ</button>
+      <button class="main-button continue" type="button">Продолжить покупки</button>
+    </span>
+    <button class="button-close-pb" type="button" aria-label="Закрыть"></button>
   </section>
-  <section class="visually-hidden">
-    <h2>товар добавлен в корзину</h2>
-    <button type="button">Оформить заказ</button>
-    <button type="button">Продолжить покупки</button>
-    <button type="button">Закрыть</button>
-  </section>
+  <script src="js/pbpopup.js"></script>
 </body>
 
 </html>
