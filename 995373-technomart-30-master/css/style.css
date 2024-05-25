@@ -232,8 +232,6 @@ h1,
 }
 
 
-
-
 .header-up-title a {
   display: block;
   height: 40px;
@@ -280,6 +278,14 @@ h1,
 
 .Search:active::before {
   opacity: 0.3;
+}
+
+.Search:active {
+  background-color: var(--basic-white);
+  color: #000000;
+  height: 33px;
+  margin-left: 0px;
+  border: none;
 }
 
 .bookmark {
@@ -333,12 +339,24 @@ h1,
   opacity: 0.3;
 }
 
+.bookmark:focus,
+.basket:focus {
+  background-color: #161D29;
+  max-height: 32px;
+}
 
 .order {
   background-color: var(--rich-green);
   max-height: 32px;
   margin-left: 5px;
   padding-left: 20px;
+}
+.order:hover {
+  background-color: #5FBB2D;
+}
+
+.order:focus {
+  background-color: #63A63E;
 }
 
 .info-header {
@@ -621,6 +639,15 @@ h1,
   border: none;
 }
 
+.button-product:hover {
+  background-color: rgba(197, 197, 197, 0.3);
+}
+
+.button-product:focus {
+  background-color: rgba(169, 169, 169, 0.3)
+
+}
+
 .button-materials {
   position: relative;
 }
@@ -808,6 +835,14 @@ h1,
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+}
+
+.main-button:hover {
+  background-color: #CA2C37;
+}
+
+.main-button:focus {
+  background-color: #BA2732;
 }
 
 .all-title-button {
@@ -1413,7 +1448,6 @@ h1,
   min-width: 350px;
 }
 
-
 .function-filter {
   margin-left: 6px;
 }
@@ -1427,6 +1461,17 @@ h1,
   margin-left: 6px;
 }
 
+.type-filter:hover,
+.active-filter:hover,
+.function-filter:hover {
+  color: #000000;
+}
+
+.type-filter:focus,
+.active-filter:focus,
+.function-filter:focus{
+  color: var(--basic-coral)
+}
 
 .passive-filter {
   color: var(--text-del);
@@ -1897,6 +1942,12 @@ h1,
   align-items: center;
   border-radius: 50%;
 }
+
+.social-button:hover,
+.social-button:focus{
+  background-color: var(--basic-coral);
+}
+
 
 .social-link {
   justify-self: center;
